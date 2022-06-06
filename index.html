@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<h1>Módulo 07
+    Parte(02): Programação Javascript</h1>
+
+    <h2>
+     O Primeiro objetivo desta página é criar um "formulário" que contenha a comparação de dois números, um botão  que ao ser clicado apareça o resultado se o primeiro número é maior, menor ou igual ao segundo número.
+     </h2>
+<br>
+<h2>
+     Segundo objetivo:
+     fazer a compararação do tamanho de duas 'Strings' se uma é maior, menor ou igual a segunda string.
+    </h2>
+<br>
+<h2>
+     Terceiro objetivo:
+     pedir que um usuário digite sua idade em 3 campos(dia,mês e ano), seu gênero e, após clicar no botão de "verificar " informe a quantidade de dias aproximadamente que faltam para sua morte.
+     considerando dados do IBGE de 73,1 anos para homens e 80,1 anos para mulheres.
+    </h2>
+
+<body>
+    <h3>
+        <p> Essa parte é de uso para comparar dois números que ao serem clicados mostrem se o primeiro número é maior, menor ou igual ao segundo número
+        </p>
+       </h3>
+<!--Essa parte abaixo é pra comparação de dois números-->
+    <label for="primeiroValor">primeiroValor:
+        </label>
+        <input type="text" id="primeiroValor">
+
+    <label for="primeiroValor">segundoValor:
+        </label>
+        <input type="text" id="segundoValor">
+
+    <button onclick="pegaNumero()">pega numero</button>
+
+    <!-- essa parte será para comparação de tamanhos de string,abaixo: -->
+    <h3>
+        <p> Essa parte abaixo será para compararação  de tamanhos de string
+        </p>
+    </h3>
+
+
+    <label for="exampleString">exampleString:</label>
+        <input type="text" id="exampleString">
+        <button onclick="Tentativa()">
+        clik-me
+    </button>
+      
+    <label for="exampleString">exampleString:</label>
+        <input type="text" id="exampleString02">
+        <h3>Coloque acima um valor e clique no botão, veja o resultado no console.</h3>
+    <br>
+        <h3>
+            <p>Essa parte é destinada a expectativa de morte de uma pessoa, usando como base a expectativa de morte fornecida pelo IBGE que no caso é de 73,1 anos para homens e de 80,1 anos para mulhres</p>
+        </h3>
+
+
+        <label for="dia">
+            <p>dia:</p>
+            <input type="text" id="dia">
+        </label>
+        <label for="mes">
+            <p>mes:</p>
+            <input type="text" id="mes">
+        </label>
+        <label for="ano">
+            <p>ano:</p>
+                <input type="text" id="ano">
+            </label>
+        <label for="m">Mulher:</label>
+            <input type="radio" name="sexo" id="m" value="mulher">
+        <label for="h">homem:</label>
+            <input type="radio" name="sexo" id="h" value="homem">
+        <button onclick="exibeData()">pega numero</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
